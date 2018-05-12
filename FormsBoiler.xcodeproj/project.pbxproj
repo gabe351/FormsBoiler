@@ -13,6 +13,12 @@
 		043C127A20A731DB00086E32 /* DefaultDateIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127920A731DB00086E32 /* DefaultDateIfNilActionTest.swift */; };
 		043C127C20A731F500086E32 /* DefaultFloatIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127B20A731F500086E32 /* DefaultFloatIfNilActionTest.swift */; };
 		043C127E20A7323700086E32 /* DefaultIntIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */; };
+		043C128120A7332D00086E32 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128020A7332D00086E32 /* StoryboardLoadable.swift */; };
+		043C128420A7334B00086E32 /* UIStoryBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128320A7334B00086E32 /* UIStoryBoardExtension.swift */; };
+		043C128620A733BC00086E32 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128520A733BC00086E32 /* UIActivityIndicatorViewExtension.swift */; };
+		043C128820A733D400086E32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128720A733D400086E32 /* UIColorExtension.swift */; };
+		043C128A20A733EC00086E32 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128920A733EC00086E32 /* UIDeviceExtension.swift */; };
+		043C128C20A7340800086E32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128B20A7340800086E32 /* UIViewController.swift */; };
 		04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9620A72C3200801699 /* AppDelegate.swift */; };
 		04F00F9920A72C3200801699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9820A72C3200801699 /* ViewController.swift */; };
 		04F00F9C20A72C3200801699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9A20A72C3200801699 /* Main.storyboard */; };
@@ -40,6 +46,12 @@
 		043C127920A731DB00086E32 /* DefaultDateIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDateIfNilActionTest.swift; sourceTree = "<group>"; };
 		043C127B20A731F500086E32 /* DefaultFloatIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFloatIfNilActionTest.swift; sourceTree = "<group>"; };
 		043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIntIfNilActionTest.swift; sourceTree = "<group>"; };
+		043C128020A7332D00086E32 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		043C128320A7334B00086E32 /* UIStoryBoardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoardExtension.swift; sourceTree = "<group>"; };
+		043C128520A733BC00086E32 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
+		043C128720A733D400086E32 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		043C128920A733EC00086E32 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		043C128B20A7340800086E32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		04F00F9320A72C3200801699 /* FormsBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F00F9620A72C3200801699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F00F9820A72C3200801699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +101,8 @@
 		043C127120A72FB700086E32 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				043C128220A7334100086E32 /* Extensions */,
+				043C127F20A7332700086E32 /* Protocols */,
 				043C127220A72FC700086E32 /* DefaultValues.swift */,
 			);
 			path = Utils;
@@ -104,6 +118,26 @@
 				043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */,
 			);
 			path = DefaultValues;
+			sourceTree = "<group>";
+		};
+		043C127F20A7332700086E32 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				043C128020A7332D00086E32 /* StoryboardLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		043C128220A7334100086E32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				043C128320A7334B00086E32 /* UIStoryBoardExtension.swift */,
+				043C128520A733BC00086E32 /* UIActivityIndicatorViewExtension.swift */,
+				043C128720A733D400086E32 /* UIColorExtension.swift */,
+				043C128920A733EC00086E32 /* UIDeviceExtension.swift */,
+				043C128B20A7340800086E32 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		04F00F8A20A72C3200801699 = {
@@ -370,9 +404,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C128420A7334B00086E32 /* UIStoryBoardExtension.swift in Sources */,
+				043C128820A733D400086E32 /* UIColorExtension.swift in Sources */,
+				043C128C20A7340800086E32 /* UIViewController.swift in Sources */,
+				043C128120A7332D00086E32 /* StoryboardLoadable.swift in Sources */,
 				04F00F9920A72C3200801699 /* ViewController.swift in Sources */,
 				043C127320A72FC700086E32 /* DefaultValues.swift in Sources */,
+				043C128A20A733EC00086E32 /* UIDeviceExtension.swift in Sources */,
 				04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */,
+				043C128620A733BC00086E32 /* UIActivityIndicatorViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
