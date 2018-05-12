@@ -13,6 +13,8 @@
 		04F00F9E20A72C3300801699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9D20A72C3300801699 /* Assets.xcassets */; };
 		04F00FA120A72C3300801699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9F20A72C3300801699 /* LaunchScreen.storyboard */; };
 		04F00FAC20A72C3400801699 /* FormsBoilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00FAB20A72C3400801699 /* FormsBoilerTests.swift */; };
+		1EC3F095B35BD657EAC4F672 /* Pods_FormsBoiler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC15DE32DA1CD93917B6E2F /* Pods_FormsBoiler.framework */; };
+		FDEE374DD105CD549CA13F5D /* Pods_FormsBoilerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C5EEF441853517342008B /* Pods_FormsBoilerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		04F00FA720A72C3400801699 /* FormsBoilerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormsBoilerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F00FAB20A72C3400801699 /* FormsBoilerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsBoilerTests.swift; sourceTree = "<group>"; };
 		04F00FAD20A72C3400801699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244C5EEF441853517342008B /* Pods_FormsBoilerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormsBoilerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C60166C2E448031D4E7FCC2 /* Pods-FormsBoiler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormsBoiler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FormsBoiler/Pods-FormsBoiler.debug.xcconfig"; sourceTree = "<group>"; };
+		625404530E16CB5E42927120 /* Pods-FormsBoilerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormsBoilerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormsBoilerTests/Pods-FormsBoilerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7340191AD00E68BF410BE98 /* Pods-FormsBoilerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormsBoilerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FormsBoilerTests/Pods-FormsBoilerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEC15DE32DA1CD93917B6E2F /* Pods_FormsBoiler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormsBoiler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A78186D5EABC05DC4DF929 /* Pods-FormsBoiler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormsBoiler.release.xcconfig"; path = "Pods/Target Support Files/Pods-FormsBoiler/Pods-FormsBoiler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC3F095B35BD657EAC4F672 /* Pods_FormsBoiler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEE374DD105CD549CA13F5D /* Pods_FormsBoilerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				04F00F9520A72C3200801699 /* FormsBoiler */,
 				04F00FAA20A72C3400801699 /* FormsBoilerTests */,
 				04F00F9420A72C3200801699 /* Products */,
+				5E6904E3B181CDF499E2707A /* Pods */,
+				A772BB96917EBF77F664CD3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = FormsBoilerTests;
 			sourceTree = "<group>";
 		};
+		5E6904E3B181CDF499E2707A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C60166C2E448031D4E7FCC2 /* Pods-FormsBoiler.debug.xcconfig */,
+				F4A78186D5EABC05DC4DF929 /* Pods-FormsBoiler.release.xcconfig */,
+				D7340191AD00E68BF410BE98 /* Pods-FormsBoilerTests.debug.xcconfig */,
+				625404530E16CB5E42927120 /* Pods-FormsBoilerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A772BB96917EBF77F664CD3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEC15DE32DA1CD93917B6E2F /* Pods_FormsBoiler.framework */,
+				244C5EEF441853517342008B /* Pods_FormsBoilerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F00FB020A72C3400801699 /* Build configuration list for PBXNativeTarget "FormsBoiler" */;
 			buildPhases = (
+				DC37A7E1EA0A2C6E3B63373B /* [CP] Check Pods Manifest.lock */,
 				04F00F8F20A72C3200801699 /* Sources */,
 				04F00F9020A72C3200801699 /* Frameworks */,
 				04F00F9120A72C3200801699 /* Resources */,
+				3B8F30E0B254AF4FE5C1E560 /* [CP] Embed Pods Frameworks */,
+				E73FE09D1B82168C5A490D40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F00FB320A72C3400801699 /* Build configuration list for PBXNativeTarget "FormsBoilerTests" */;
 			buildPhases = (
+				05C1239282D94288258841E6 /* [CP] Check Pods Manifest.lock */,
 				04F00FA320A72C3400801699 /* Sources */,
 				04F00FA420A72C3400801699 /* Frameworks */,
 				04F00FA520A72C3400801699 /* Resources */,
+				FEDAB6F7FA6E28120F005A66 /* [CP] Embed Pods Frameworks */,
+				A760F44AED97124A3122B692 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05C1239282D94288258841E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B8F30E0B254AF4FE5C1E560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormsBoiler/Pods-FormsBoiler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A760F44AED97124A3122B692 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormsBoilerTests/Pods-FormsBoilerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC37A7E1EA0A2C6E3B63373B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E73FE09D1B82168C5A490D40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormsBoiler/Pods-FormsBoiler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEDAB6F7FA6E28120F005A66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FormsBoilerTests/Pods-FormsBoilerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04F00F8F20A72C3200801699 /* Sources */ = {
@@ -356,15 +487,13 @@
 		};
 		04F00FB120A72C3400801699 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C60166C2E448031D4E7FCC2 /* Pods-FormsBoiler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoiler/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoiler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,15 +503,13 @@
 		};
 		04F00FB220A72C3400801699 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A78186D5EABC05DC4DF929 /* Pods-FormsBoiler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoiler/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoiler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,17 +519,14 @@
 		};
 		04F00FB420A72C3400801699 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7340191AD00E68BF410BE98 /* Pods-FormsBoilerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoilerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoilerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,17 +537,14 @@
 		};
 		04F00FB520A72C3400801699 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625404530E16CB5E42927120 /* Pods-FormsBoilerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoilerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoilerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
