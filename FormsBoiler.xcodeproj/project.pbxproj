@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043C127320A72FC700086E32 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127220A72FC700086E32 /* DefaultValues.swift */; };
+		043C127620A72FF600086E32 /* DefaultStringIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127520A72FF600086E32 /* DefaultStringIfNilActionTest.swift */; };
+		043C127820A730FB00086E32 /* DefaultBoolIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127720A730FB00086E32 /* DefaultBoolIfNilActionTest.swift */; };
+		043C127A20A731DB00086E32 /* DefaultDateIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127920A731DB00086E32 /* DefaultDateIfNilActionTest.swift */; };
+		043C127C20A731F500086E32 /* DefaultFloatIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127B20A731F500086E32 /* DefaultFloatIfNilActionTest.swift */; };
+		043C127E20A7323700086E32 /* DefaultIntIfNilActionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */; };
 		04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9620A72C3200801699 /* AppDelegate.swift */; };
 		04F00F9920A72C3200801699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9820A72C3200801699 /* ViewController.swift */; };
 		04F00F9C20A72C3200801699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9A20A72C3200801699 /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043C127220A72FC700086E32 /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
+		043C127520A72FF600086E32 /* DefaultStringIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStringIfNilActionTest.swift; sourceTree = "<group>"; };
+		043C127720A730FB00086E32 /* DefaultBoolIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBoolIfNilActionTest.swift; sourceTree = "<group>"; };
+		043C127920A731DB00086E32 /* DefaultDateIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDateIfNilActionTest.swift; sourceTree = "<group>"; };
+		043C127B20A731F500086E32 /* DefaultFloatIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFloatIfNilActionTest.swift; sourceTree = "<group>"; };
+		043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIntIfNilActionTest.swift; sourceTree = "<group>"; };
 		04F00F9320A72C3200801699 /* FormsBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F00F9620A72C3200801699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F00F9820A72C3200801699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043C127020A72FA300086E32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				043C127420A72FE600086E32 /* DefaultValues */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		043C127120A72FB700086E32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				043C127220A72FC700086E32 /* DefaultValues.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		043C127420A72FE600086E32 /* DefaultValues */ = {
+			isa = PBXGroup;
+			children = (
+				043C127520A72FF600086E32 /* DefaultStringIfNilActionTest.swift */,
+				043C127720A730FB00086E32 /* DefaultBoolIfNilActionTest.swift */,
+				043C127920A731DB00086E32 /* DefaultDateIfNilActionTest.swift */,
+				043C127B20A731F500086E32 /* DefaultFloatIfNilActionTest.swift */,
+				043C127D20A7323700086E32 /* DefaultIntIfNilActionTest.swift */,
+			);
+			path = DefaultValues;
+			sourceTree = "<group>";
+		};
 		04F00F8A20A72C3200801699 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +134,7 @@
 				04F00F9A20A72C3200801699 /* Main.storyboard */,
 				04F00F9D20A72C3300801699 /* Assets.xcassets */,
 				04F00F9F20A72C3300801699 /* LaunchScreen.storyboard */,
+				043C127120A72FB700086E32 /* Utils */,
 				04F00FA220A72C3300801699 /* Info.plist */,
 			);
 			path = FormsBoiler;
@@ -102,6 +143,7 @@
 		04F00FAA20A72C3400801699 /* FormsBoilerTests */ = {
 			isa = PBXGroup;
 			children = (
+				043C127020A72FA300086E32 /* Utils */,
 				04F00FAB20A72C3400801699 /* FormsBoilerTests.swift */,
 				04F00FAD20A72C3400801699 /* Info.plist */,
 			);
@@ -329,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F00F9920A72C3200801699 /* ViewController.swift in Sources */,
+				043C127320A72FC700086E32 /* DefaultValues.swift in Sources */,
 				04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C127A20A731DB00086E32 /* DefaultDateIfNilActionTest.swift in Sources */,
+				043C127C20A731F500086E32 /* DefaultFloatIfNilActionTest.swift in Sources */,
+				043C127E20A7323700086E32 /* DefaultIntIfNilActionTest.swift in Sources */,
+				043C127820A730FB00086E32 /* DefaultBoolIfNilActionTest.swift in Sources */,
 				04F00FAC20A72C3400801699 /* FormsBoilerTests.swift in Sources */,
+				043C127620A72FF600086E32 /* DefaultStringIfNilActionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +541,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoiler/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoiler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -509,7 +560,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoiler/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoiler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,7 +580,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoilerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoilerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -544,7 +602,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJSU72ZSSJ;
 				INFOPLIST_FILE = FormsBoilerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.gabe.FormsBoilerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
