@@ -6,6 +6,7 @@ target 'FormsBoiler' do
   use_frameworks!
   pod 'UIColor_Hex_Swift', '~> 4.0.1'
   pod 'SwiftyJSON'
+  pod 'RealmSwift'
   # Pods for FormsBoiler
 
   target 'FormsBoilerTests' do

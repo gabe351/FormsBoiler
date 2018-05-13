@@ -21,12 +21,14 @@
 		043C128C20A7340800086E32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C128B20A7340800086E32 /* UIViewController.swift */; };
 		043C129120A7350C00086E32 /* FormLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129020A7350C00086E32 /* FormLocalDataSource.swift */; };
 		043C129620A8645B00086E32 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129520A8645B00086E32 /* LoaderViewController.swift */; };
-		043C129820A8653100086E32 /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129720A8653100086E32 /* FormEntry.swift */; };
+		043C129820A8653100086E32 /* FormsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129720A8653100086E32 /* FormsEntry.swift */; };
 		043C129B20A8657000086E32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129A20A8657000086E32 /* HomeViewController.swift */; };
 		043C129D20A865F500086E32 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C129C20A865F500086E32 /* BaseViewController.swift */; };
 		043C129F20A8671F00086E32 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C129E20A8671F00086E32 /* Home.storyboard */; };
 		043C12A220A8677800086E32 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C12A120A8677800086E32 /* Users.storyboard */; };
 		043C12A420A867C400086E32 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C12A320A867C400086E32 /* UsersViewController.swift */; };
+		046B5EBD20A8CFF900AD2C1B /* FieldsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */; };
+		046B5EC020A8D06F00AD2C1B /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */; };
 		0484045B20A86DF6002602DC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045A20A86DF6002602DC /* RoundedButton.swift */; };
 		0484045D20A86E10002602DC /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045C20A86E10002602DC /* RoundedImageView.swift */; };
 		0484045F20A86E2A002602DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045E20A86E2A002602DC /* RoundedView.swift */; };
@@ -72,12 +74,14 @@
 		043C128B20A7340800086E32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		043C129020A7350C00086E32 /* FormLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLocalDataSource.swift; sourceTree = "<group>"; };
 		043C129520A8645B00086E32 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
-		043C129720A8653100086E32 /* FormEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormEntry.swift; sourceTree = "<group>"; };
+		043C129720A8653100086E32 /* FormsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsEntry.swift; sourceTree = "<group>"; };
 		043C129A20A8657000086E32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		043C129C20A865F500086E32 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		043C129E20A8671F00086E32 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		043C12A120A8677800086E32 /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
 		043C12A320A867C400086E32 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsEntry.swift; sourceTree = "<group>"; };
+		046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
 		0484045A20A86DF6002602DC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0484045C20A86E10002602DC /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		0484045E20A86E2A002602DC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				043C128F20A734F000086E32 /* Forms */,
+				046B5EBB20A8CFEA00AD2C1B /* Fields */,
+				046B5EBE20A8D05F00AD2C1B /* Data */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -197,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				043C129020A7350C00086E32 /* FormLocalDataSource.swift */,
-				043C129720A8653100086E32 /* FormEntry.swift */,
+				043C129720A8653100086E32 /* FormsEntry.swift */,
 			);
 			path = Forms;
 			sourceTree = "<group>";
@@ -215,8 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				043C129920A8655B00086E32 /* Home */,
-				0484046320A874C3002602DC /* UserForm */,
 				043C12A020A8675F00086E32 /* UserList */,
+				0484046320A874C3002602DC /* UserForm */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -248,6 +254,22 @@
 				043C12A120A8677800086E32 /* Users.storyboard */,
 			);
 			path = UserList;
+			sourceTree = "<group>";
+		};
+		046B5EBB20A8CFEA00AD2C1B /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		046B5EBE20A8D05F00AD2C1B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		0484045920A86DDD002602DC /* IBDesignables */ = {
@@ -580,7 +602,8 @@
 				0484045F20A86E2A002602DC /* RoundedView.swift in Sources */,
 				043C129620A8645B00086E32 /* LoaderViewController.swift in Sources */,
 				043C128C20A7340800086E32 /* UIViewController.swift in Sources */,
-				043C129820A8653100086E32 /* FormEntry.swift in Sources */,
+				046B5EC020A8D06F00AD2C1B /* DataEntry.swift in Sources */,
+				043C129820A8653100086E32 /* FormsEntry.swift in Sources */,
 				043C129D20A865F500086E32 /* BaseViewController.swift in Sources */,
 				043C128120A7332D00086E32 /* StoryboardLoadable.swift in Sources */,
 				0484046520A874F1002602DC /* UserFormViewController.swift in Sources */,
@@ -595,6 +618,7 @@
 				043C129B20A8657000086E32 /* HomeViewController.swift in Sources */,
 				043C128620A733BC00086E32 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				0484046F20A880FA002602DC /* UserCell.swift in Sources */,
+				046B5EBD20A8CFF900AD2C1B /* FieldsEntry.swift in Sources */,
 				0484047420A8CACD002602DC /* UserDto.swift in Sources */,
 				0484046C20A8809B002602DC /* UsersTableView.swift in Sources */,
 			);
