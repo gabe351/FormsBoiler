@@ -16,7 +16,7 @@ class UserFormViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func saveDidPressed(_ sender: UIButton) {
@@ -25,6 +25,6 @@ class UserFormViewController: BaseViewController {
     
     @IBAction func cancelDidPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-    }        
+    }
 }
 

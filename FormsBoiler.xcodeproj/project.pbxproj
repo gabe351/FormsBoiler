@@ -33,6 +33,10 @@
 		0484046120A86E40002602DC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484046020A86E40002602DC /* GradientView.swift */; };
 		0484046520A874F1002602DC /* UserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484046420A874F1002602DC /* UserFormViewController.swift */; };
 		0484046920A87529002602DC /* UserForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484046820A87529002602DC /* UserForm.storyboard */; };
+		0484046C20A8809B002602DC /* UsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484046B20A8809B002602DC /* UsersTableView.swift */; };
+		0484046F20A880FA002602DC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484046E20A880FA002602DC /* UserCell.swift */; };
+		0484047120A88191002602DC /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484047020A88191002602DC /* UserCell.xib */; };
+		0484047420A8CACD002602DC /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484047320A8CACD002602DC /* UserDto.swift */; };
 		04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9620A72C3200801699 /* AppDelegate.swift */; };
 		04F00F9920A72C3200801699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9820A72C3200801699 /* ViewController.swift */; };
 		04F00F9C20A72C3200801699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9A20A72C3200801699 /* Main.storyboard */; };
@@ -80,6 +84,10 @@
 		0484046020A86E40002602DC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0484046420A874F1002602DC /* UserFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormViewController.swift; sourceTree = "<group>"; };
 		0484046820A87529002602DC /* UserForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserForm.storyboard; sourceTree = "<group>"; };
+		0484046B20A8809B002602DC /* UsersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableView.swift; sourceTree = "<group>"; };
+		0484046E20A880FA002602DC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		0484047020A88191002602DC /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		0484047320A8CACD002602DC /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
 		04F00F9320A72C3200801699 /* FormsBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F00F9620A72C3200801699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F00F9820A72C3200801699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +242,8 @@
 		043C12A020A8675F00086E32 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
+				0484047220A8CAC1002602DC /* Dto */,
+				0484046A20A88090002602DC /* TableView */,
 				043C12A320A867C400086E32 /* UsersViewController.swift */,
 				043C12A120A8677800086E32 /* Users.storyboard */,
 			);
@@ -266,6 +276,32 @@
 				0484046820A87529002602DC /* UserForm.storyboard */,
 			);
 			path = UserForm;
+			sourceTree = "<group>";
+		};
+		0484046A20A88090002602DC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0484046D20A880F2002602DC /* Cell */,
+				0484046B20A8809B002602DC /* UsersTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0484046D20A880F2002602DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0484046E20A880FA002602DC /* UserCell.swift */,
+				0484047020A88191002602DC /* UserCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0484047220A8CAC1002602DC /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				0484047320A8CACD002602DC /* UserDto.swift */,
+			);
+			path = Dto;
 			sourceTree = "<group>";
 		};
 		04F00F8A20A72C3200801699 = {
@@ -427,6 +463,7 @@
 				04F00F9C20A72C3200801699 /* Main.storyboard in Resources */,
 				043C129F20A8671F00086E32 /* Home.storyboard in Resources */,
 				0484046920A87529002602DC /* UserForm.storyboard in Resources */,
+				0484047120A88191002602DC /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +594,9 @@
 				04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */,
 				043C129B20A8657000086E32 /* HomeViewController.swift in Sources */,
 				043C128620A733BC00086E32 /* UIActivityIndicatorViewExtension.swift in Sources */,
+				0484046F20A880FA002602DC /* UserCell.swift in Sources */,
+				0484047420A8CACD002602DC /* UserDto.swift in Sources */,
+				0484046C20A8809B002602DC /* UsersTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
