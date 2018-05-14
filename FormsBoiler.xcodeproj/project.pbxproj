@@ -29,6 +29,11 @@
 		043C12A420A867C400086E32 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C12A320A867C400086E32 /* UsersViewController.swift */; };
 		046B5EBD20A8CFF900AD2C1B /* FieldsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */; };
 		046B5EC020A8D06F00AD2C1B /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */; };
+		046B5EC220A9252300AD2C1B /* FormLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EC120A9252300AD2C1B /* FormLocalDataSourceImpl.swift */; };
+		046B5EC420A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EC320A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift */; };
+		046B5EC620A926E800AD2C1B /* FieldsLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EC520A926E800AD2C1B /* FieldsLocalDataSource.swift */; };
+		046B5EC820A9290B00AD2C1B /* DataLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EC720A9290B00AD2C1B /* DataLocalDataSource.swift */; };
+		046B5ECA20A9294C00AD2C1B /* DataLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B5EC920A9294C00AD2C1B /* DataLocalDataSourceImpl.swift */; };
 		0484045B20A86DF6002602DC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045A20A86DF6002602DC /* RoundedButton.swift */; };
 		0484045D20A86E10002602DC /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045C20A86E10002602DC /* RoundedImageView.swift */; };
 		0484045F20A86E2A002602DC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484045E20A86E2A002602DC /* RoundedView.swift */; };
@@ -82,6 +87,11 @@
 		043C12A320A867C400086E32 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsEntry.swift; sourceTree = "<group>"; };
 		046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		046B5EC120A9252300AD2C1B /* FormLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		046B5EC320A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		046B5EC520A926E800AD2C1B /* FieldsLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsLocalDataSource.swift; sourceTree = "<group>"; };
+		046B5EC720A9290B00AD2C1B /* DataLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalDataSource.swift; sourceTree = "<group>"; };
+		046B5EC920A9294C00AD2C1B /* DataLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocalDataSourceImpl.swift; sourceTree = "<group>"; };
 		0484045A20A86DF6002602DC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0484045C20A86E10002602DC /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		0484045E20A86E2A002602DC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
@@ -203,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				043C129020A7350C00086E32 /* FormLocalDataSource.swift */,
+				046B5EC120A9252300AD2C1B /* FormLocalDataSourceImpl.swift */,
 				043C129720A8653100086E32 /* FormsEntry.swift */,
 			);
 			path = Forms;
@@ -260,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				046B5EBC20A8CFF900AD2C1B /* FieldsEntry.swift */,
+				046B5EC520A926E800AD2C1B /* FieldsLocalDataSource.swift */,
+				046B5EC320A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift */,
 			);
 			path = Fields;
 			sourceTree = "<group>";
@@ -268,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				046B5EBF20A8D06F00AD2C1B /* DataEntry.swift */,
+				046B5EC720A9290B00AD2C1B /* DataLocalDataSource.swift */,
+				046B5EC920A9294C00AD2C1B /* DataLocalDataSourceImpl.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -599,11 +614,16 @@
 				0484046120A86E40002602DC /* GradientView.swift in Sources */,
 				043C128420A7334B00086E32 /* UIStoryBoardExtension.swift in Sources */,
 				043C128820A733D400086E32 /* UIColorExtension.swift in Sources */,
+				046B5EC620A926E800AD2C1B /* FieldsLocalDataSource.swift in Sources */,
+				046B5ECA20A9294C00AD2C1B /* DataLocalDataSourceImpl.swift in Sources */,
 				0484045F20A86E2A002602DC /* RoundedView.swift in Sources */,
+				046B5EC220A9252300AD2C1B /* FormLocalDataSourceImpl.swift in Sources */,
+				046B5EC820A9290B00AD2C1B /* DataLocalDataSource.swift in Sources */,
 				043C129620A8645B00086E32 /* LoaderViewController.swift in Sources */,
 				043C128C20A7340800086E32 /* UIViewController.swift in Sources */,
 				046B5EC020A8D06F00AD2C1B /* DataEntry.swift in Sources */,
 				043C129820A8653100086E32 /* FormsEntry.swift in Sources */,
+				046B5EC420A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift in Sources */,
 				043C129D20A865F500086E32 /* BaseViewController.swift in Sources */,
 				043C128120A7332D00086E32 /* StoryboardLoadable.swift in Sources */,
 				0484046520A874F1002602DC /* UserFormViewController.swift in Sources */,

@@ -11,9 +11,9 @@ import RealmSwift
 class FieldsEntry: Object {
     
     @objc dynamic var guid     = ""
+    @objc dynamic var formGuid = ""
     @objc dynamic var name     = ""
     @objc dynamic var type     = ""
-    @objc dynamic var formGuid = ""
         
     override static func primaryKey() -> String? {
         return "guid"

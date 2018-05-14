@@ -10,6 +10,8 @@ import Foundation
 
 protocol FormLocalDataSource {
     
+    func save(form: FormsEntry)
     
+    func findBy(guid: String) -> FormsEntry
     
 }
