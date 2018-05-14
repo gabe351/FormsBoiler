@@ -15,6 +15,8 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MyAplication.registerUserForm()        
     }
     
     override func viewWillAppear(_ animated: Bool) {

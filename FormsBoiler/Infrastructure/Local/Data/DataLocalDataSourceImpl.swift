@@ -38,4 +38,14 @@ public class DataLocalDataSourceImpl: DataLocalDataSource {
         
         return Array(foundObjects)
     }
+    
+    func save(data: DataEntry) {
+        do {
+            try realm.write {
+                realm.add(data, update: true)
+            }
+        } catch {
+            print("error ---> \(error)")
+        }
+    }
 }

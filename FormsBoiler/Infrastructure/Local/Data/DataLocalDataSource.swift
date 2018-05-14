@@ -12,4 +12,5 @@ protocol DataLocalDataSource {
     
     func allBy(formGuid: String) -> [DataEntry]
     
+    func save(data: DataEntry)    
 }

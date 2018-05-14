@@ -100,6 +100,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IVt-Zj-FS0"/>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="V02-xe-RdE" id="1bc-Bm-EdH"/>
+                        <outlet property="nameTextField" destination="cP9-g7-2Iu" id="Mg6-hK-j69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1p-Ni-J6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

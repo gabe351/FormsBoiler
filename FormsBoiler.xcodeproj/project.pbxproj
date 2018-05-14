@@ -44,6 +44,11 @@
 		0484046F20A880FA002602DC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484046E20A880FA002602DC /* UserCell.swift */; };
 		0484047120A88191002602DC /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484047020A88191002602DC /* UserCell.xib */; };
 		0484047420A8CACD002602DC /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484047320A8CACD002602DC /* UserDto.swift */; };
+		04A4645020A982FC00AD5624 /* MyAplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4644F20A982FC00AD5624 /* MyAplication.swift */; };
+		04A4645320A9842300AD5624 /* InjectionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4645220A9842300AD5624 /* InjectionLocalDataSource.swift */; };
+		04A4645620A98A4700AD5624 /* UserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4645520A98A4700AD5624 /* UserEntry.swift */; };
+		04A4645820A98A7700AD5624 /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4645720A98A7700AD5624 /* UserLocalDataSource.swift */; };
+		04A4645A20A98ADE00AD5624 /* UserLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4645920A98ADE00AD5624 /* UserLocalDataSourceImpl.swift */; };
 		04F00F9720A72C3200801699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9620A72C3200801699 /* AppDelegate.swift */; };
 		04F00F9920A72C3200801699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F00F9820A72C3200801699 /* ViewController.swift */; };
 		04F00F9C20A72C3200801699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F00F9A20A72C3200801699 /* Main.storyboard */; };
@@ -102,6 +107,11 @@
 		0484046E20A880FA002602DC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0484047020A88191002602DC /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		0484047320A8CACD002602DC /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
+		04A4644F20A982FC00AD5624 /* MyAplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAplication.swift; sourceTree = "<group>"; };
+		04A4645220A9842300AD5624 /* InjectionLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionLocalDataSource.swift; sourceTree = "<group>"; };
+		04A4645520A98A4700AD5624 /* UserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntry.swift; sourceTree = "<group>"; };
+		04A4645720A98A7700AD5624 /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
+		04A4645920A98ADE00AD5624 /* UserLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSourceImpl.swift; sourceTree = "<group>"; };
 		04F00F9320A72C3200801699 /* FormsBoiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormsBoiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F00F9620A72C3200801699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F00F9820A72C3200801699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 		043C128E20A734EB00086E32 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				04A4645420A98A3600AD5624 /* User */,
 				043C128F20A734F000086E32 /* Forms */,
 				046B5EBB20A8CFEA00AD2C1B /* Fields */,
 				046B5EBE20A8D05F00AD2C1B /* Data */,
@@ -212,9 +223,9 @@
 		043C128F20A734F000086E32 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
+				043C129720A8653100086E32 /* FormsEntry.swift */,
 				043C129020A7350C00086E32 /* FormLocalDataSource.swift */,
 				046B5EC120A9252300AD2C1B /* FormLocalDataSourceImpl.swift */,
-				043C129720A8653100086E32 /* FormsEntry.swift */,
 			);
 			path = Forms;
 			sourceTree = "<group>";
@@ -224,6 +235,8 @@
 			children = (
 				043C129320A8643800086E32 /* Modules */,
 				043C129420A8644C00086E32 /* Common */,
+				04A4645120A983F600AD5624 /* Injections */,
+				04A4644F20A982FC00AD5624 /* MyAplication.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -339,6 +352,24 @@
 				0484047320A8CACD002602DC /* UserDto.swift */,
 			);
 			path = Dto;
+			sourceTree = "<group>";
+		};
+		04A4645120A983F600AD5624 /* Injections */ = {
+			isa = PBXGroup;
+			children = (
+				04A4645220A9842300AD5624 /* InjectionLocalDataSource.swift */,
+			);
+			path = Injections;
+			sourceTree = "<group>";
+		};
+		04A4645420A98A3600AD5624 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				04A4645520A98A4700AD5624 /* UserEntry.swift */,
+				04A4645720A98A7700AD5624 /* UserLocalDataSource.swift */,
+				04A4645920A98ADE00AD5624 /* UserLocalDataSourceImpl.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		04F00F8A20A72C3200801699 = {
@@ -617,17 +648,22 @@
 				046B5EC620A926E800AD2C1B /* FieldsLocalDataSource.swift in Sources */,
 				046B5ECA20A9294C00AD2C1B /* DataLocalDataSourceImpl.swift in Sources */,
 				0484045F20A86E2A002602DC /* RoundedView.swift in Sources */,
+				04A4645620A98A4700AD5624 /* UserEntry.swift in Sources */,
 				046B5EC220A9252300AD2C1B /* FormLocalDataSourceImpl.swift in Sources */,
+				04A4645020A982FC00AD5624 /* MyAplication.swift in Sources */,
+				04A4645820A98A7700AD5624 /* UserLocalDataSource.swift in Sources */,
 				046B5EC820A9290B00AD2C1B /* DataLocalDataSource.swift in Sources */,
 				043C129620A8645B00086E32 /* LoaderViewController.swift in Sources */,
 				043C128C20A7340800086E32 /* UIViewController.swift in Sources */,
 				046B5EC020A8D06F00AD2C1B /* DataEntry.swift in Sources */,
 				043C129820A8653100086E32 /* FormsEntry.swift in Sources */,
+				04A4645A20A98ADE00AD5624 /* UserLocalDataSourceImpl.swift in Sources */,
 				046B5EC420A926D900AD2C1B /* FieldsLocalDataSourceImpl.swift in Sources */,
 				043C129D20A865F500086E32 /* BaseViewController.swift in Sources */,
 				043C128120A7332D00086E32 /* StoryboardLoadable.swift in Sources */,
 				0484046520A874F1002602DC /* UserFormViewController.swift in Sources */,
 				043C12A420A867C400086E32 /* UsersViewController.swift in Sources */,
+				04A4645320A9842300AD5624 /* InjectionLocalDataSource.swift in Sources */,
 				04F00F9920A72C3200801699 /* ViewController.swift in Sources */,
 				0484045D20A86E10002602DC /* RoundedImageView.swift in Sources */,
 				043C127320A72FC700086E32 /* DefaultValues.swift in Sources */,

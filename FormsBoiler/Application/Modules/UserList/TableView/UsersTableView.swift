@@ -10,7 +10,7 @@ import UIKit
 
 class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
-    var users = [UserDto]()
+    var users = [UserEntry]()
     
     func initTableView() {
         self.dataSource = self

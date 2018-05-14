@@ -16,7 +16,7 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     
-    func configureView(user: UserDto) {
+    func configureView(user: UserEntry) {
         nameLabel.text = user.name
         ageLabel.text  = "\(user.age) years"
     }

@@ -28,22 +28,8 @@ class UsersViewController: BaseViewController {
         super.viewWillAppear(animated)
         
         tableView.initTableView()
-        tableView.users = [
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52),
-                           UserDto(name: "Miguel da silva", age: 52)
-                            ]
+        tableView.users = MyAplication.allUsersBy(formGuid: MyAplication.userFormGuid)
+        tableView.reloadData()
     }
     
     @objc func addTapped() {
